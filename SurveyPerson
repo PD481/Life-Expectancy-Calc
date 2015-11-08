@@ -1,0 +1,5 @@
+surveyPerson()
+Person person1 = new Person
+person1.askName()
+person1.askSmoke()
+person1.askDriveer()
