@@ -1,0 +1,20 @@
+private int Smoke
+private int Driver
+
+Person{}
+
+public void int askSmoke(){
+
+int Smoke;
+println("do you smoke")
+take input
+do calculation
+set the int Smoke
+
+Call the method below:
+setSmoke(Smoke)
+
+public void setSmoke (int F)
+{
+this.Smoke = F;
+}
