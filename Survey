@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Survey {
+
+    //---Requirement 14: Create an object---
+    Person person1  = new Person();
+    public void surveyPerson() {
+
+//---Requirement 21: Add exception handling---------------------------------------------------------------------------------------------
+//---Requirement 26: Println Method---
+//---Requirement 22: Using Java Library Class (using date)---
+
+        java.util.Date Currentdate = new java.util.Date();
+        String startedOn = "This survey was started on: ";
+        System.out.printf("%S %s", startedOn, Currentdate);
+        System.out.println(" ");
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your age: ");
+        person1.setAge(input.nextInt());
+
+        System.out.println("How many packs of cigarettes do you smoke per day? ");
+        person1.setPackOfCigaretteSmokePerDay(input.nextInt());
+
+        System.out.println("How many years of college have you completed? ");
+        person1.setYearOfEducation(input.nextInt());
+
+        System.out.println("Do you have a family history of cancer? ");
+        double familyHistoryOfBreastCancer = input.nextDouble();
+        System.out.println("How many drinks of alcohol do you consume on a weekly basis? ");
+        int bottlesOfAlcoholConsumedPerDay = input.nextInt();
+        System.out.println("How many hours do you sleep per night?");
+        int hoursOfSleepPerDay = input.nextInt();
+        System.out.println("Enter your name: ");
+        //---Requirement 6: String Class Method---
+        String name = input.nextLine();
+        System.out.println(name.toUpperCase());
+        System.out.println("     ");
+    }
+
+    public void calculateLE();{
+        if (person1.getPackOfCigaretteSmokePerDay()>3) {
+            person1.setSmoking(-5);
+        }
+        else if (person1.getPackOfCigaretteSmokePerDay()==0);
+            person1.setSmoking(5);
+    }
+
+    public void printLE(){
+        System.out.println(person1.getPackOfCigaretteSmokePerDay());
+    }
+    Oldperson old1 = new Oldperson(1,2,1.0,1.0,5,5);
+    }
